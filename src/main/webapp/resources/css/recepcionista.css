@@ -1,0 +1,106 @@
+/*
++-------------------+
+|                   |
+| recepcionista.css |
+|                   |
++-------------------+
+*/
+* {
+    text-align: center;
+    font-family: 'Helvetica', sans-serif; 
+}
+
+body {
+    background-color: rgb(225, 225, 225);
+}
+
+h1 {
+    font-size: 30px;
+    color: rgb(64, 64, 64);
+}
+
+h3 {
+    font-size: 18px;
+    color: rgb(64, 64, 64);
+}
+
+.main {
+    height: 620px;
+    width: 100%;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.main > div {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.main > div > form, table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    margin-bottom: 50px;
+    margin-left: 8%;
+    margin-right: 8%;
+    
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    background-color: rgb(200, 200, 200);
+    border-radius: 15px;
+}
+
+td {
+    border-top: solid 2px rgb(64, 64, 64);
+    
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+#altaTurnos {
+    padding-top: 10px;
+}
+
+#altaTurnos > div > h3 {
+    padding-top: 10px;
+}
+
+form > button {
+    margin-top: 20px;
+    background-color: rgb(64, 225, 64);
+    
+    border-color: rgb(64, 225, 64);
+    border-radius: 20%;
+    
+    color: rgb(64, 64, 64);
+}
+
+form > button:hover {
+    background-color: rgba(64, 225, 64, 0.5);
+    border-color: rgba(64, 225, 64, 0.5);
+}
+
+.volver {
+    margin: 10px;
+    display: inline-block;
+    
+    width: 10%;
+    height: 30px;
+    background-color: rgb(225, 64, 64);
+    border-color: rgb(225, 64, 64);
+    border-radius: 20%;
+    
+    color: rgb(225, 225, 225);
+    font-size: 20px;
+}
+
+.volver:hover {
+    background-color: rgba(225, 64, 64, 0.5);
+    border-color: rgba(225, 64, 64, 0.5);
+}

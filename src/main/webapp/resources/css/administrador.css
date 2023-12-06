@@ -1,0 +1,117 @@
+/*
++-------------------+
+|                   |
+| administrador.css |
+|                   |
++-------------------+
+*/
+
+* {
+    text-align: center;
+    font-family: 'Helvetica', sans-serif; 
+}
+
+body {
+    background-color: rgb(225, 225, 225);
+    background-image: url('../img/VetStock.PNG');
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    color: rgb(64, 64, 64);
+}
+
+p {
+    margin: 1px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    
+    width: 100%;
+    height: 800px;
+}
+
+.main > div {
+    width: 100%;
+    height: 30%;
+}
+
+.volver {
+    margin: 10px;
+    display: inline-block;
+    
+    width: 10%;
+    height: 30px;
+    background-color: rgb(225, 64, 64);
+    border-color: rgb(225, 64, 64);
+    border-radius: 20%;
+    
+    color: rgb(225, 225, 225);
+    font-size: 20px;
+}
+
+.volver {
+    color: rgba(225, 225, 225, 0.5);
+    border-color: rgba(225, 64, 64, 0.5);
+}
+
+.form-content {
+    margin-bottom: 10px;
+}
+
+.form-content > * {
+    text-align: left;
+}
+
+#usuarios, #vets, #productos {
+    display: flex;
+    flex-direction: row;
+    
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#usuarios > div, #vets > div, #productos > div {
+    width: 50%;
+    height: 100%;
+    
+    margin: 20px;
+    margin-bottom: 40px;
+    
+    border-radius: 2%;
+}
+
+.collapsible-btn {
+    color: rgb(64, 64, 64);
+    padding: 7px;
+    text-align: center;
+    cursor: pointer;
+    display: block;
+}
+
+/* Ocultar el input */
+#collapsible-checkbox {
+    display: none;
+}
+
+/* Estilo para cuando el checkbox está marcado */
+#collapsible-checkbox:checked + .collapsible-btn {
+    background-color: #45a049;
+}
+
+.collapsible-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    
+    display: flex;
+    flex-direction: row;
+}
+
+/* Mostrar el contenido cuando el checkbox está marcado */
+#collapsible-checkbox:checked + .collapsible-btn + .collapsible-content {
+    max-height: 1000px; /* Usar un valor suficientemente grande para acomodar el contenido */
+}

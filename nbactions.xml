@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+        <action>
+            <actionName>run</actionName>
+            <packagings>
+                <packaging>war</packaging>
+            </packagings>
+            <goals>
+                <goal>jetty:run</goal>
+            </goals>
+        </action>
+        <action>
+            <actionName>debug</actionName>
+            <packagings>
+                <packaging>war</packaging>
+            </packagings>
+            <goals>
+                <goal>jetty:run</goal>
+            </goals>
+            <properties>
+                <exec.args>-Xdebug -Xrunjdwp:transport=dt_socket,server=n,address=${jpda.address}</exec.args>
+                <jpda.listen>maven</jpda.listen>
+                <netbeans.deploy.debugmode>true</netbeans.deploy.debugmode>
+            </properties>
+        </action>
+        <action>
+            <actionName>CUSTOM-Jetty stop</actionName>
+            <displayName>Jetty stop</displayName>
+            <goals>
+                <goal>jetty:stop</goal>
+            </goals>
+        </action>
+    </actions>

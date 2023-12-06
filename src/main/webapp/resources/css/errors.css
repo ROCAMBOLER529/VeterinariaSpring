@@ -1,0 +1,37 @@
+/*
++------------+
+|            |
+| errors.css |
+|            |
++------------+
+*/
+
+* {
+    font-family: 'Helvetica', sans-serif;
+    text-align: center;
+}
+
+body {
+    background-color: rgb(225, 225, 225);
+}
+
+h1 {
+    color: rgb(64, 64, 64);
+}
+
+div {
+    text-align: center;
+}
+
+input {
+    display: inline-block;
+    
+    width: 10%;
+    height: 30px;
+    background-color: rgb(64, 64, 225);
+    border-color: rgb(64, 64, 225);
+    border-radius: 20%;
+    
+    color: rgb(225, 225, 225);
+    font-size: 20px;
+}
